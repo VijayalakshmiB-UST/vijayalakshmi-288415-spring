@@ -8,13 +8,7 @@ import org.mapstruct.*;
 
 @Mapper(componentModel = "spring")
 public interface UserMapper {
-    
-    @Mapping(target = "id", source = "id")
-    @Mapping(target = "username", source = "username")
-    @Mapping(target = "email", source = "email")
-    @Mapping(target = "password", source = "password")
-    @Mapping(target = "role", source = "role")
-    @Mapping(target = "createdAt", source = "createdAt")
+
     UserDTO toDTO(User user);
     
     @Mapping(target = "id", ignore = true)
