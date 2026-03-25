@@ -4,9 +4,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.util.Comparator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -38,6 +36,17 @@ public class TrainbaseApplication implements CommandLineRunner {
                 .limit(3)
                 .toList();
         System.out.println("topThreeFrequentElements is:" + topThreeFrequentElements);
+
+        String inputStr = "programming";
+        String finalString = inputStr.chars().distinct()
+                .mapToObj(c -> String.valueOf((char)c))
+                .collect(Collectors.joining(""));
+        System.out.println("Removed DUplicate chars:" + finalString);
+        String finalString1 = Arrays.stream(inputStr.split(""))
+                .distinct()
+                .collect(Collectors.joining(""));
+        System.out.println("Removed Duplicate Chars:" + finalString1);
+
 
     }
 }
