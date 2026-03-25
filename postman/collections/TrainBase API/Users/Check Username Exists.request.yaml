@@ -1,0 +1,5 @@
+$kind: http-request
+name: Check Username Exists
+method: GET
+url: '{{baseUrl}}/api/users/exists/username/{{username}}'
+order: 8000

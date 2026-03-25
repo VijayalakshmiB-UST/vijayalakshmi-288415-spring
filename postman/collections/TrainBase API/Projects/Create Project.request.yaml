@@ -1,0 +1,16 @@
+$kind: http-request
+name: Create Project
+method: POST
+url: '{{baseUrl}}/api/projects'
+order: 3000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "name": "TrainBase Platform",
+      "description": "A platform for managing trainees and projects.",
+      "ownerId": 1
+    }

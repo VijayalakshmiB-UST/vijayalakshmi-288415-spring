@@ -1,0 +1,3 @@
+$kind: collection
+name: Tasks
+description: 'Endpoints for managing tasks — create, read, update, delete, and filter by project, assignee, status, priority, or a combination.'

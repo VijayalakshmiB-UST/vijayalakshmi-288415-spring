@@ -1,0 +1,8 @@
+$kind: http-request
+name: Search Projects by Name
+method: GET
+url: '{{baseUrl}}/api/projects/search'
+order: 7000
+queryParams:
+  - key: name
+    value: TrainBase

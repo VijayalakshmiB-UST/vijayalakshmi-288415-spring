@@ -1,0 +1,3 @@
+$kind: collection
+name: Users
+description: 'Endpoints for managing users — create, read, update, delete, and lookup by username/email.'

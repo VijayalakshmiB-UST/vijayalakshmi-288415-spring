@@ -1,0 +1,3 @@
+$kind: collection
+name: TrainBase API
+description: 'REST API collection for the TrainBase Spring Boot project. Covers CRUD operations and query endpoints for Users, Projects, Tasks, and Comments.'

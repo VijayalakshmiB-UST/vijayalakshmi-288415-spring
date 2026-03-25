@@ -1,0 +1,3 @@
+$kind: collection
+name: Projects
+description: 'Endpoints for managing projects — create, read, update, delete, filter by owner, and search by name.'
